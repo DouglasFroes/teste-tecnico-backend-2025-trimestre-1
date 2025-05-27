@@ -1,3 +1,17 @@
+
+Horario de Inicio: 05/07/2025 - 13:05  
+Horario de Fim: 05/07/2025 - 18:00  
+Nome de usuário: DouglasFroes
+
+# Run the application
+
+```bash
+docker-compose up --build
+```
+
+Você pode acessar a aplicação em `http://localhost:3000`.
+Documentação da API está disponível em `http://localhost:3000/api-docs`.
+
 # teste-tecnico-backend-2025-trimestre-1
 Teste técnico para a posição de Backend Dev. Edição do primeiro trimestre de 2025.
 
