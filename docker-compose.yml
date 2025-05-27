@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    container_name: video-backend-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./public:/app/public
+    depends_on:
+      - redis
+    environment:
+      - NODE_ENV=production
+  redis:
+    image: redis:7-alpine
+    container_name: video-backend-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
